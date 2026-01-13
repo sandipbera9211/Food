@@ -15,7 +15,15 @@ const app=express();
 const port=4000
 
 app.use(express.json())
-app.use(cors())
+app.use(
+  cors({
+    origin: [
+      "https://foodadmin-92r9.onrender.com", // deployed frontend
+      "http://localhost:5173",               // optional for local dev
+    ],
+    credentials: true,
+  })
+);
 
 //db connect
 connectDB();
