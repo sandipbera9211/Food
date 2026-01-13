@@ -3,7 +3,7 @@ import usermodel from "../models/usermodel.js";
 import Stripe from 'stripe';
 
 const placeOrder = async (req, res) => {
-  const frontend_url = "http://localhost:5174";
+  const frontend_url = "https://food-frontend-w9f1.onrender.com";
 
   try {
     // console.log("Stripe key loaded:", process.env.STRIPE_SECRET_KEY);
