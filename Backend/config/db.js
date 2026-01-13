@@ -1,6 +1,15 @@
 import mongoose from "mongoose";
 
-export const connectDB=async()=>{
-    const mongoURI = process.env.MONGODB_URI || 'mongodb://localhost:27017/Food';
-    await mongoose.connect(mongoURI).then(()=>console.log("Db connected"));
-}
+export const connectDB = async () => {
+  try {
+    if (!process.env.MONGODB_URI) {
+      throw new Error("MONGODB_URI is not defined");
+    }
+
+    await mongoose.connect(process.env.MONGODB_URI);
+    console.log("MongoDB connected");
+  } catch (error) {
+    console.error("MongoDB connection failed:", error.message);
+    process.exit(1);
+  }
+};
