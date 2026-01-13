@@ -40,7 +40,7 @@ const List = ({url}) => {
         {list.map((item,index)=>{
           return(
             <div key={index} className='list-table-format grid grid-cols-5 gap-12 !mb-3 '>
-                 <img src={`${url}/images/`+item.image} alt="" className='h-25'/>
+                 <img src={item.image.startsWith('http') ? item.image : `${url}/images/${item.image}`} alt="" className='h-25'/>
                  <p>{item.name}</p>
                  <p>{item.category}</p>
                  <p>${item.price}</p>
