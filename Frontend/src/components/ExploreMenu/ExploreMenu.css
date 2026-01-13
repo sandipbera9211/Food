@@ -1,0 +1,15 @@
+.menu-list::-webkit-scrollbar{
+  display: none;
+}
+.menu-list {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+.menu-list img.active{
+  border: 3px solid orange;
+  padding: 2px;
+}
+.menu.active{
+color: orangered;
+border: none;
+}

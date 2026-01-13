@@ -1,0 +1,48 @@
+
+@import "tailwindcss";
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body{
+  min-height: 100vh;
+  font-family: Verdana, Geneva, sans-serif;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.active{
+  border-bottom: 3px solid #190202;
+  color: #190202;  /* Optional: Change the text color when active */
+    font-weight: bold;
+}
+/* Ensure cart image is positioned relative */
+/* Ensure the container of the cart icon is relative */
+.relative {
+  position: relative;
+}
+
+/* The dot will be positioned relative to the cart icon container */
+.dot {
+  position: absolute;
+  top: -4px;   /* Adjust this value to your liking */
+  right: -5px; /* Adjust this value to your liking */
+  width: 10px; /* Adjust the size */
+  height: 10px; /* Adjust the size */
+  background-color: #190202; /* Dot color */
+  border-radius: 50%; /* Make the dot circular */
+}
+
+@keyframes fadeIn{
+  0%{
+     opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}

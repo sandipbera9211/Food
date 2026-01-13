@@ -1,0 +1,22 @@
+.header{
+    height: 34vw;
+    min-height: 400px; /* Ensure minimum height for mobile */
+    margin: 30px auto;
+    background: url('./header_img.png') no-repeat;
+    background-size: cover; /* Change to cover to fill the area */
+    background-position: center;
+    position: relative;
+    border-radius: 20px; /* Add some rounding if it looks better, matching other elements */
+}
+
+.header-contents{
+    animation: fadeIn 4s;
+}
+
+@media (max-width: 768px) {
+    .header-contents {
+        max-width: 65%;
+        left: 6vw;
+        bottom: 10%;
+    }
+}

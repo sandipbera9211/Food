@@ -1,0 +1,8 @@
+form{
+   box-shadow: 0 3 9px black;
+}
+input{
+    padding: 4px;
+    font-size: 13px;
+    color: rgb(61, 12, 12);
+}

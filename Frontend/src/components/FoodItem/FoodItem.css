@@ -1,0 +1,11 @@
+.food-item{
+    animation: fadeIn 2s;
+    box-shadow: 0 0 5px #9595a3;
+}
+.food-item-name-rating{
+  justify-items: center;
+  justify-content: space-between;
+}
+.rating{
+    color: aqua;
+}

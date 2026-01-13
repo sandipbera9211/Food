@@ -1,0 +1,7 @@
+/* Sidebat.css */
+.active {
+  background-color: #fbbf24; /* amber-300 */
+  color: black;
+  border-radius: 0.5rem;
+  font-weight: bold;
+}
