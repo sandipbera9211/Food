@@ -4,7 +4,7 @@ import axios from "axios";
 export const StroreContext =createContext(null)
  const StroreContextProvider=(props)=>{
     const [cartItem,setcartItem]=useState({})
-    const url="http://localhost:4000"
+    const url="https://food-mbli.onrender.com"
     const [token,settoken]=useState("");
     const[food_list,setfoodlist]=useState([]);
     const addtoCart = async(itemId) => {
