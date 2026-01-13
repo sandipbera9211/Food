@@ -4,15 +4,16 @@ import fs from 'fs'
 //add item
 const addFood=async(req,res)=>{
       
-    let image_filename=`${req.file.filename}`
+   let image_url = `${process.env.SERVER_URL}/images/${req.file.filename}`
 
-    const food=new foodModel({
-        name:req.body.name,
-        description:req.body.description,
-        price:req.body.price,
-        category:req.body.category,
-        image:image_filename
-    })
+const food = new foodModel({
+    name: req.body.name,
+    description: req.body.description,
+    price: req.body.price,
+    category: req.body.category,
+    image: image_url // <-- save full URL
+})
+
 
     try{
         await food.save();
