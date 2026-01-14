@@ -7,7 +7,7 @@ import AppDownload from '../../components/AppDownload/AppDownload';
 const Home = () => {
   const [category, setcategory] = useState("All");
   return (
-    <div className='lg:!mx-32 md:!mx-0'>
+    <div className='lg:!mx-32 md:!mx-2'>
         <Header />
         <ExploreMenu category={category} setcategory={setcategory} />
         <ErrorBoundary>
