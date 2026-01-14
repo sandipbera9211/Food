@@ -11,7 +11,7 @@ const food = new foodModel({
     description: req.body.description,
     price: req.body.price,
     category: req.body.category,
-    image: image_url // <-- save full URL
+    image: req.file.filename // <-- save full URL
 })
 
 
